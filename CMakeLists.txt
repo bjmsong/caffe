@@ -6,6 +6,8 @@ if(POLICY CMP0054)
   cmake_policy(SET CMP0054 NEW)
 endif()
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+
 if(USE_MPI)
   set(CMAKE_C_COMPILER "mpicc")
   set(CMAKE_CXX_COMPILER "mpic++")
